@@ -1,0 +1,18 @@
+
+cp grids/grid_017x017_quad.grid  test.grid
+../edu2d | tee screen017.txt
+
+cp grids/grid_033x033_quad.grid  test.grid
+../edu2d | tee screen033.txt
+
+
+cp grids/grid_065x065_quad.grid  test.grid
+../edu2d | tee screen065.txt
+
+cp grids/grid_129x129_quad.grid  test.grid
+../edu2d | tee screen129.txt
+
+grep nodes screen*
+grep heffc screen*
+grep L1 screen*
+
